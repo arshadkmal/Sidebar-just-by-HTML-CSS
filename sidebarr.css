@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  /* font-weight: 300; */
+  font-style: normal;
+  color: white;
+}
+.container{
+   height: 100vh;
+    background-image: url(backgroundimage.jpg);
+    background-size: cover;
+}
+.side_bar{
+    position: absolute;
+    left : -300px;
+    height: 100vh;
+    width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+    transition : all 0.3s 0.2s linear;
+}
+.btn_one {
+   position: absolute;
+   left : 16px;
+   font-size: 20px;
+   font-weight: 200;
+   top : 20px;
+    transition : all 0.3s 0.2s  linear;
+} 
+.container .btn_two {
+      position: absolute;
+   left : 240px;
+   font-size: 20px;
+   font-weight: 200;
+bottom: 484px;
+    transition : all 0.3s  linear;
+    cursor: pointer;
+}
+.container .side_bar{
+    position: absolute;
+   font-size: 22px;
+}
+.container .side_bar .menu{
+    position: absolute;
+    top : 80px;
+    line-height: 3.6;
+}
+li{
+    list-style: none;
+}
+.side_bar .logo{
+  position: absolute;
+  top : 16px;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+}
+.side_bar .logo a{
+    position: absolute;
+    left : 20%;
+}
+a{
+    text-decoration: none;
+}
+#check:checked ~.side_bar{
+    left : 0px;
+}
+#check:checked ~.btn_one  {
+opacity: 0;
+}
+
+#check{
+    display: none;
+}
+.side_bar .menu i{
+ margin-right: 10px;
+    margin-left: 30px;
+}
+.side_bar .menu{
+    width: 100%;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.side_bar .menu li:hover{
+ i{
+transform: scale(1.1);
+}
+box-shadow: 0 0 4px rgba(255, 255, 255, 0.4); 
+}
+.side_bar .Social_media{
+    position: absolute;
+  bottom : 20px;
+  left : 25%;
+}
+.side_bar .Social_media i:hover{
+transform: scale(1.2);
+}
+.side_bar .btn_two:hover {
+transform: scale(1.2);
+}
+.side_bar .btn_two i{
+  cursor: pointer;
+  opacity: 0.5;
+}
+.side_bar .btn_one i{
+  position: absolute;
+  cursor: pointer;
+}
+.btn_one i:hover{
+transform: scale(1.2);
+}
+@media(max-width : 581.86px ) {
+.side_bar .Social_media {
+  bottom : 60px;
+}
+#check:checked ~ #footer{
+  opacity: 0;
+  transition : all 0s 0.0s linear;
+}
+#footer{
+position: fixed;
+bottom : 0px;
+right : 0px;
+}
+}
+.container #footer {
+position: absolute;
+bottom : 0px;
+right : 0px;
+
+}
+#footer {
+  text-align: center;
+  padding: 15px;
+  color: #eee;
+  font-size: 14px;
+   transition : all 0s 0.6s linear;
+}
+#footer i {
+  color: red;
+  margin: 0 5px;
+}
